@@ -50,19 +50,29 @@ a:hover{text-decoration: underline;
 #about_main .about_1{float:left;
               width: 500px; height: 970px;
               background-color: darkgoldenrod;}
-#about_main .image h2{}
-#about_main .me{}
+#about_main .about_1 h2{}
+#about_main .me{margin: 70px 45px 0;
+                width: 400px; height: 450px;
+                background-color: hotpink;}
 #about_main .me img{}
-#about_main .mail{ }
+#about_main .mail{margin: 70px 45px 0 45px;
+                  width: 400px; height: 300px; 
+                  background-color: forestgreen;}
 
 
 
 #about_main .introduce{float: left;
                        width:700px; height:540px;
                        background-color: darksalmon;}
+#about_main .about_2{width: 500px; height: 440px;
+                     background-color: bisque;
+                     margin: 0 auto; margin-top: 45px;}
 #about_main .qualify{float: left;
                      width: 700px; height: 430px;
                      background-color: deepskyblue;}
+#about_main .about_3{width: 600px; height: 380px;
+                    background-color: khaki; 
+                    margin: 0 auto;}
 
 /* Skill 부분 */
 
