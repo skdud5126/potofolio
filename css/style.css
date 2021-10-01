@@ -47,17 +47,13 @@ a:hover{text-decoration: underline;
 #about_main{margin: 0 auto;
             width: 1200px; height: 970px;}
 
-#about_main .image{float:left;
+#about_main .about_1{float:left;
               width: 500px; height: 970px;
               background-color: darkgoldenrod;}
 #about_main .image h2{}
-#about_main .me{margin: 30px 30px;
-                width: 400px; height: 500px;
-                background-color: darkseagreen;}
+#about_main .me{}
 #about_main .me img{}
-#about_main .mail{ margin: 30px 30px;
-                  width: 400px; height: 280px;
-                  background-color: chartreuse;}
+#about_main .mail{ }
 
 
 
