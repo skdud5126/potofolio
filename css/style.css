@@ -1,26 +1,199 @@
 *{margin:0; padding:0;}
 body{margin: 0; padding: 0;
-    font-size: 12px;
-    font-family: "맑은고딕";
-    color: #444;}
+      font-size: 12px;
+      font-family: "맑은고딕";
+      color: #444;}
 
 ul, ol, li {list-style: none;}
 img{border: 0px;}
 
-#wrap{width: 100%}
-#wrap .inner{margin: 0 auto;
-            width: 1200px; height: 983px;
-            }
-#wrap .inner li{float: left;
-                margin: 0 250px 0 250px;}
+/* a:link{text-decoration: none;
+       color: #ccc;}
+a:hover{text-decoration: underline;
+        color: red;}
+a:active{color:#fff;} */
 
-#body ul{margin:0 auto; width:1200px; height: 4928px;
-         }
+/* a:visited{color: #fff;}  */
 
-#body ul li{float: left;
-            margin: 0 250px 0 250px;}
+#wrap{width: 100%;}
+h1,h2,h3,h4,h5,h6{letter-spacing: 1px; font-weight: 700;
+                  text-transform: uppercase;}
 
-#footer{margin: 0 auto; width: 1200px; height: 983px;
-        }
-#footer li{float: left;
-           margin: 0 250px 0 250px;}
+/* 상단부분 */
+#intro{width: 100%; height: 970px; }
+#intro .back{position: absolute; top: 0; left: 0; width: 100%;
+             z-index: -1;}
+#intro .back li{float:left;}
+/* 옆으로 지나갈때 설정
+ #inner .back li:nth-child(1){position: absolute; left:0; top:0;}
+#inner .back li:nth-child(2){position: absolute; left: 100%; top: 0;}
+#inner .back li:nth-child(3){position: absolute; left: 200%; top: 0;}
+#inner .back li:nth-child(4){position: absolute; left: 300%; top: 0;} */
+
+#intro .back li:nth-child(1){position: absolute; left:0; top:0; z-index: 400;}
+#intro .back li:nth-child(2){position: absolute; left: 0; top: 0; z-index: 300;}
+#intro .back li:nth-child(3){position: absolute; left: 0; top: 0; z-index: 200;}
+#intro .back li:nth-child(4){position: absolute; left: 0; top: 0; z-index: 100;}
+
+
+#intro .inner{margin: 0 auto;
+             width: 1200px; height: 970px;
+             }
+#intro .main_top{margin: 0 auto; float: left;
+             width: 1200px; height: 120px;
+             position: fixed;
+             background-color: rgba(50,50,50, 0.7);}
+
+
+#intro .main_top .logo{float: left; margin: 30px 30px;
+                       font-size: 50px; color: yellow;
+                       text-shadow: 3px 3px red; }
+
+#intro .main_top .main_mn{float: right; margin: 40px 30px; 
+                          color: grey;
+                          text-shadow: 3px 2px lemonchiffon;}
+
+#intro .main_top .main_mn li{float:left; margin-right: 35px;}
+#intro .main_top .main_mn li a{font-size: 30px; text-transform: uppercase; font-weight: 700; color:#fff; text-decoration:none;}
+
+/* #intro .main_mn ul li.on a { color: blue; font-weight:bold; }  */
+
+#intro .main_bottom{width: 1200px; height: 970px;
+                    float: left;}
+#intro .main_bottom h2{text-align: center; margin-top: 350px; font-size: 80px;
+                       text-shadow: 3px 3px #ccc;}
+
+
+/* About 부분 */
+/* #about{width: 100%; height: 970px; 
+       background-color: chocolate;}
+
+#about_main{margin: 0 auto;
+            width: 1200px; height: 970px;}
+
+#about_main .about_1{float:left;
+              width: 500px; height: 970px;
+              background-color: darkgoldenrod;}
+#about_main .about_1 h2{}
+#about_main .me{margin: 70px 45px 0;
+                width: 400px; height: 450px;
+                background-color: hotpink;}
+#about_main .me img{}
+#about_main .mail{margin: 70px 45px 0 45px;
+                  width: 400px; height: 300px; 
+                  background-color: forestgreen;}
+
+
+
+#about_main .introduce{float: left;
+                       width:700px; height:540px;
+                       background-color: darksalmon;}
+#about_main .about_2{width: 500px; height: 440px;
+                     background-color: bisque;
+                     margin: 0 auto; margin-top: 45px;}
+#about_main .qualify{float: left;
+                     width: 700px; height: 430px;
+                     background-color: deepskyblue;}
+#about_main .about_3{width: 600px; height: 380px;
+                    background-color: khaki; 
+                    margin: 0 auto;} */
+
+#profile{width: 100%; height: 970x;
+       background-color: lightgray;}
+#profile .mn{margin: 0 auto;
+           width: 1200px; height: 970px;
+           background-color: lightpink;
+           padding-top:120px;}
+#profile .mn h2{font-size: 90px; 
+              color: #000;
+              text-shadow: 3px 3px white;
+              text-align: center;}
+#profile .image img{float: left; margin: 50px 25px; padding: 10px;
+                  width: 500px; height: 400px; 
+                  border: 3px solid white;}
+#profile .image h4{ float: left; font-size: 50px;
+                  text-shadow: 3px 3px #444;
+                  color: #fff;
+                  margin: 50px 150px;}
+#profile .image ul{float: left; line-height: 50px;}
+#profile .image ul li{ color: #fff;
+                    font-weight: 600; font-size: 18px;
+                    text-shadow: 2px 2px #000;}
+
+#profile .intro{width: 1200px; height: 300px; background-color: bisque;
+              float: left; line-height: 50px; padding-top: 20px;}
+#profile .intro p{text-align: center; font-size: 21px; 
+                font-weight: 900; text-shadow: 2px 2px #fff;}
+/* Skill 부분 */
+
+#skill{width:100%; height: 1300px;
+                   background-color: indianred;}
+#skill .skill_main{margin: 0 auto;
+                   width: 1200px; height: 1300px;
+                   background-color: lightblue;
+                   padding-top:120px;}
+#skill .skill_main h2{font-size: 90px; 
+                      color: #000;
+                      text-shadow: 3px 3px white;
+                      text-align: center;} 
+
+#skill .web h4{text-align: center; font-size: 30px;
+                color: #fff; text-shadow: 3px 3px #444;margin: 30px 0px;}                      
+
+#skill .web div{text-align: center;}                
+#skill .web img{ border: 5px solid orange; border-radius: 20px;
+                padding: 20px; margin: 30px;
+                background-color: beige;}
+
+
+#skill .ser h4{text-align: center; font-size: 30px;
+               color: #fff; text-shadow: 3px 3px #444;
+               margin: 30px 0;}
+#skill .ser div{text-align: center;}     
+#skill .ser img{border: 5px solid orange; border-radius: 20px;
+                padding: 20px; margin: 30px; 
+                width: 128px; height: 128px;
+                background-color: beige;}    
+     
+#skill .data h4{text-align: center; font-size: 30px;
+               color: #fff; text-shadow: 3px 3px #444;
+              margin: 30px 0;}
+#skill .data div{text-align: center;}
+#skill .data img{border: 5px solid orange; border-radius: 20px;
+               padding: 20px; margin: 30px; 
+               width: 128px; height: 128px;
+               background-color: beige;}
+
+/* Project 부분 */
+
+#project{width:100%; height: 970px;
+       background-color: lightsalmon;}
+#project .project_main{margin: 0 auto;
+       width: 1200px; height: 970px;
+       background-color: limegreen;
+       padding-top:120px;}
+#project .project_main h2{font-size: 90px; 
+          color: #000;
+          text-shadow: 3px 3px white;
+          text-align: center;} 
+
+
+/* Concat 부분 */
+
+#contact{width:100%; height: 520px;
+       background-color: mediumaquamarine;}
+#contact .contact_main{margin: 0 auto;
+       width: 1200px; height: 400px;
+       background-color: olivedrab;
+       padding-top:120px;}
+#contact .contact_main h2{font-size: 90px; 
+          color: #000;
+          text-shadow: 3px 3px white;
+          text-align: center;} 
+
+#contact .mail{text-align: center;
+               margin-top: 80px;}
+#contact .mail a{border: 3px dotted black;
+                 background-color: #fff;
+                 border-radius: 20px;
+                 font-size: 50px; }
