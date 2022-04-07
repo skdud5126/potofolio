@@ -1,0 +1,26 @@
+*{margin:0; padding:0;}
+body{margin: 0; padding: 0;
+    font-size: 12px;
+    font-family: "맑은고딕";
+    color: #444;}
+
+ul, ol, li {list-style: none;}
+img{border: 0px;}
+
+#wrap{width: 100%}
+#wrap .inner{margin: 0 auto;
+            width: 1200px; height: 983px;
+            }
+#wrap .inner li{float: left;
+                margin: 0 250px 0 250px;}
+
+#body ul{margin:0 auto; width:1200px; height: 4928px;
+         }
+
+#body ul li{float: left;
+            margin: 0 250px 0 250px;}
+
+#footer{margin: 0 auto; width: 1200px; height: 983px;
+        }
+#footer li{float: left;
+           margin: 0 250px 0 250px;}
